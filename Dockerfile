@@ -1,6 +1,6 @@
 FROM runpod/worker-comfyui:5.1.0-base
 
-RUN comfy-node-install comfyui-kjnodes comfyui_ultimatesdupscale comfyui-detail-daemon rgthree-comfy
+RUN comfy-node-install comfyui-kjnodes comfyui_ultimatesdupscale comfyui-detail-daemon rgthree-comfy comfyui-impact-pack
 
 RUN comfy model download --url https://huggingface.co/Shaiona/sd-models/resolve/main/archive_illustrious/oneObsession_1424DNsfw.safetensors --relative-path models/checkpoints --filename oneObsession_1424DNsfw.safetensors
 
